@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92C7CF; /* Soft blue for main background */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #121212; /* Dark text for contrast */
+}
+
+h1 {
+    color: #FBF9F1; /* Pale off-white for heading */
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Slight shadow for depth */
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    background-color: #AAD7D9; /* Light blue for boxes */
+    color: #121212; /* Dark text inside boxes */
+    font-size: 8vmin;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); /* Softer shadow */
+    transition: background-color 0.3s, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #92C7CF; /* Soft blue on hover */
+    color: #FBF9F1; /* Off-white text on hover */
+    transform: translateY(-3px); /* Subtle hover movement */
+}
+
+.box:disabled {
+    background-color: #E5E1DA; /* Neutral color when disabled */
+    cursor: not-allowed;
+}
+
+#reset-btn, #new-btn {
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #FBF9F1; /* Pale off-white for buttons */
+    color: #121212; /* Dark text on buttons */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover, #new-btn:hover {
+    background-color: #AAD7D9; /* Light blue on hover */
+}
+
+#msg {
+    color: #FBF9F1; /* Pale off-white for winner message */
+    font-size: 5vmin;
+}
+
+.msg-container {
+    height: 30vmin;
+}
